@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
 
 const projects = [
@@ -29,10 +30,12 @@ export default function Projects() {
             className="relative group bg-gray-800 rounded-2xl overflow-hidden shadow-xl transform hover:scale-[1.03] transition-all duration-500"
           >
             {/* Image */}
-            <img
+            <Image
               src={project.image}
               alt={project.title}
               className="w-full h-52 object-cover opacity-90 group-hover:opacity-100 transition"
+              width={400}
+              height={300}
             />
 
             {/* Content */}

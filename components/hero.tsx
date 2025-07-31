@@ -13,8 +13,9 @@ export default function Hero() {
       {/* 🌟 Main Content */}
       <div className="relative z-10">
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
-          Hi, I'm <span className="text-cyan-400">SYED WASIF ALI</span>
-        </h1>
+  Hi, I&apos;m <span className="text-cyan-400">SYED WASIF ALI</span>
+</h1>
+
         <p className="text-xl md:text-2xl text-gray-300 max-w-xl">
           A creative frontend developer focused on building 3D, interactive & responsive websites.
         </p>

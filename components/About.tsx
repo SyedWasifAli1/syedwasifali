@@ -58,9 +58,10 @@ export default function About() {
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <p className="text-lg leading-relaxed">
-          I'm a passionate developer who loves crafting interactive UIs with a perfect blend of creativity and functionality.
-          Focused on frontend 3D, animations, and smooth UX – I bring interfaces to life with every project I touch.
-        </p>
+  I&apos;m a passionate developer who loves crafting interactive UIs with a perfect blend of creativity and functionality.
+  Focused on frontend 3D, animations, and smooth UX – I bring interfaces to life with every project I touch.
+</p>
+
       </motion.div>
     </section>
   );
