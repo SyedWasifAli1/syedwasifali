@@ -17,7 +17,7 @@ export default function Hero() {
 </h1>
 
         <p className="text-xl md:text-2xl text-gray-300 max-w-xl">
-          A creative frontend developer focused on building 3D, interactive & responsive websites.
+          I'm a full stack developer skilled in Flutter, Next.js, MERN/MEAN, Firebase, and Python AI — building modern, scalable web & mobile apps.
         </p>
       </div>
     </section>

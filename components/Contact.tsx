@@ -5,7 +5,7 @@ export default function Contact() {
         <p className="text-lg text-gray-300 mb-6">Let&#39;s work together — feel free to reach out!</p>
 
         <a
-          href="mailto:yourname@email.com"
+          href="mailto:syedwasifali080@email.com"
           className="inline-block bg-cyan-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-cyan-400 transition"
         >
           Say Hello

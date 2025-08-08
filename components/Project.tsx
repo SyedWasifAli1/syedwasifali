@@ -3,16 +3,16 @@ import { FaGithub, FaYoutube } from 'react-icons/fa';
 
 const projects = [
   {
-    title: '3D Product Showcase',
-    description: 'Built using Three.js and React Three Fiber for immersive product displays.',
-    image: '/project/project1.png',
-    github: 'https://github.com/yourusername/3d-showcase',
-    video: 'https://youtube.com/your-demo-video1',
+    title: 'E-commerce Dashboard',
+    description: 'Crafted with Next.js, Tailwind CSS, and Firebase for seamless, immersive product experiences',
+    image: '/project/project01.png',
+    github: 'https://github.com/SyedWasifAli1/ecommercedashboard',
+    video: 'https://bazaristan-dashboard-4t47.vercel.app/',
   },
   {
     title: 'Portfolio Website',
     description: 'Responsive animated developer portfolio built with Next.js and Tailwind CSS.',
-    image: '/projects/portfolio-site.png',
+    image: '/project/project1.png',
     github: 'https://github.com/yourusername/portfolio',
     video: 'https://youtube.com/your-demo-video2',
   },
@@ -33,7 +33,7 @@ export default function Projects() {
             <Image
               src={project.image}
               alt={project.title}
-              className="w-full h-52 object-cover opacity-90 group-hover:opacity-100 transition"
+              className="w-full h-52  opacity-90 group-hover:opacity-100 transition"
               width={400}
               height={300}
             />

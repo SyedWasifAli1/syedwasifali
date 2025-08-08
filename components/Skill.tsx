@@ -33,8 +33,8 @@
 import { motion, easeOut } from 'framer-motion';
 
 const skills = [
-  'HTML', 'CSS', 'JavaScript', 'React', 'Next.js', 'Tailwind',
-  'Three.js', 'TypeScript', 'Git', 'Firebase', 'Node.js'
+  'HTML', 'CSS', 'JavaScript', 'React', 'Next.js','Angular', 'Tailwind','Flutter', 'Python','SQL Server','My SQL','mongodb',
+ 'TypeScript', 'Github', 'Firebase', 'Express.js','Node.js'
 ];
 
 const containerVariants = {
