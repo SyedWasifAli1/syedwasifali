@@ -1,6 +1,8 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,20 +16,24 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Syed Wasif Ali - Portfolio",
-  description: "Showcasing the projects and skills of Syed Wasif Ali, a creative Full-Stack developer.",
+  description:
+    "Showcasing the projects and skills of Syed Wasif Ali, a creative Full-Stack developer.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        {/* ✅ ThemeProvider body ke andar hi hona chahiye */}
+        {/* <ThemeProvider attribute="class" defaultTheme="light" enableSystem> */}
+          {children}
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
