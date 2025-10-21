@@ -31,11 +31,11 @@ import { useEffect, useState } from 'react';
 export default function Hero() {
   const [mounted, setMounted] = useState(false);
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "Hi, I'm SYED WASIF ALI";
-  const typingSpeed = 100; // ms per character
-  const delayBetweenLoops = 2000; // 2 seconds delay before restarting
+  const fullText = "I'm Syed Wasif Ali — AI Agent Developer & Full Stack Developer";
+  const typingSpeed = 80; // typing speed (slightly smoother)
+  const delayBetweenLoops = 2500; // pause before restart
 
-  // Ensure hydration safe rendering
+  // Hydration safe rendering
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -77,13 +77,13 @@ export default function Hero() {
       <div className="relative z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-gray-100">
           <span className="text-cyan-500">
-            {mounted ? displayedText : fullText} {/* fallback for SSR */}
+            {mounted ? displayedText : fullText}
           </span>
           <span className="animate-blink">|</span>
         </h1>
 
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto mt-4 mb-8">
-          I&apos;m a full stack developer skilled in Flutter, Next.js, MERN/MEAN, Firebase, and Python AI — building modern, scalable web & mobile apps.
+          I design and develop intelligent, high-performance web and mobile applications — blending AI automation with powerful full-stack engineering.
         </p>
 
         {/* 🚀 CTA Button */}
@@ -97,6 +97,7 @@ export default function Hero() {
     </section>
   );
 }
+
 
 // 'use client';
 

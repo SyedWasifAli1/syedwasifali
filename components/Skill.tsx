@@ -98,19 +98,22 @@
 
 import { motion } from 'framer-motion';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub, FaPython } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiAngular, SiFlutter, SiMongodb, SiMysql, SiFirebase, SiTypescript, SiExpress } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiAngular, SiFlutter, SiMongodb, SiMysql, SiFirebase, SiTypescript, SiExpress, SiOpenai } from 'react-icons/si';
 import { useRef, useEffect, useState } from 'react';
 
 const skills = [
+  { name: 'OpenAI SDK', icon: <SiOpenai color="#412991" /> },
+  { name: 'Python', icon: <FaPython color="#3776AB" /> },
   { name: 'HTML', icon: <FaHtml5 color="#E34F26" /> },
   { name: 'CSS', icon: <FaCss3Alt color="#1572B6" /> },
   { name: 'JavaScript', icon: <FaJs color="#F7DF1E" /> },
   { name: 'React', icon: <FaReact color="#61DAFB" /> },
   { name: 'Next.js', icon: <SiNextdotjs color="#000000" /> },
+  { name: 'OpenAI SDK', icon: <SiOpenai color="#412991" /> },
+  { name: 'Python', icon: <FaPython color="#3776AB" /> },
   { name: 'Angular', icon: <SiAngular color="#DD0031" /> },
   { name: 'Tailwind', icon: <SiTailwindcss color="#06B6D4" /> },
   { name: 'Flutter', icon: <SiFlutter color="#02569B" /> },
-  { name: 'Python', icon: <FaPython color="#3776AB" /> },
   { name: 'SQL Server', icon: <SiMysql color="#4479A1" /> },
   { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
   { name: 'MongoDB', icon: <SiMongodb color="#47A248" /> },

@@ -79,39 +79,79 @@
 
 import Image from 'next/image';
 import { FaGithub, FaYoutube } from 'react-icons/fa';
-
 const projects = [
   {
     title: 'Travel World',
-    description: 'Crafted with Next.js, Tailwind CSS, and Firebase for seamless, immersive product experiences',
+    description: 'A modern travel booking platform built with Next.js and Firebase — smooth, fast, and visually immersive for every explorer.',
     image: '/project/travelworld.png',
     github: 'https://github.com/SyedWasifAli1/ecommercedashboard',
     video: 'https://travel-world-khaki.vercel.app/',
   },
-    {
+  {
+    title: 'Faraz General Store',
+    description: 'Smart online store for daily essentials — built with Next.js and Firebase, optimized for speed and user experience.',
+    image: '/project/faraz.png',
+    github: 'https://farazgeneralstore.vercel.app/',
+    video: 'https://farazgeneralstore.vercel.app/'
+  },
+  {
+    title: 'Elite Store',
+    description: 'Premium eCommerce website with elegant UI and seamless product management — crafted with Next.js and Tailwind CSS.',
+    image: '/project/elitestore.png',
+    github: 'https://elitestore01.lovable.app/',
+    video: 'https://elitestore01.lovable.app/'
+  },
+  {
+    title: 'Taste Bite',
+    description: 'Beautiful restaurant website that delivers a smooth food ordering experience — built using Next.js and Tailwind CSS.',
+    image: '/project/tastebite.png',
+    github: 'https://tastebite-premier-grill.lovable.app/',
+    video: 'https://tastebite-premier-grill.lovable.app/'
+  },
+  {
+    title: 'Elegant Store',
+    description: 'Minimalist and responsive fashion eCommerce website — designed for elegance and performance with Next.js.',
+    image: '/project/elegantstore.png',
+    github: 'https://elegantstore-wasif.lovable.app/',
+    video: 'https://elegantstore-wasif.lovable.app/'
+  },
+  {
     title: 'Hotel Website',
-    description: 'Responsive hotel website built with Next.js and Tailwind CSS.',
+    description: 'Luxury hotel booking website with modern UI, smooth animations, and responsive design — built with Next.js.',
     image: '/project/hotel.png',
     github: 'https://github.com/yourusername/hotelwebsite',
     video: 'https://hotelmanagementsystem-tau.vercel.app/',
   },
-    {
+  {
+    title: 'Travel Agency',
+    description: 'Responsive travel agency website for global explorers — built with Next.js and Tailwind CSS for a perfect journey online.',
+    image: '/project/travelagency.png',
+    github: 'https://travelworld-wasif.lovable.app/',
+    video: 'https://travelworld-wasif.lovable.app/',
+  },
+  {
+    title: 'Data Earthscape Climate Agency',
+    description: 'Interactive data-driven platform visualizing global climate trends — built with Next.js, Firebase, and Tailwind CSS.',
+    image: '/project/climate.png',
+    github: 'https://www.tiktok.com/@syedwasifali080/video/7558880567182249236',
+    video: 'https://www.tiktok.com/@syedwasifali080/video/7558880567182249236'
+  },
+  {
     title: 'Portfolio Website',
-    description: 'Responsive animated developer portfolio built with Next.js and Tailwind CSS.',
+    description: 'Animated and responsive developer portfolio that highlights creativity and skills — powered by Next.js and Tailwind CSS.',
     image: '/project/portfolio.png',
     github: 'https://syedwasifali-portfolio.vercel.app/',
     video: 'https://syedwasifali-portfolio.vercel.app/',
   },
   {
     title: 'E-commerce Dashboard',
-    description: 'Crafted with Next.js, Tailwind CSS, and Firebase for seamless, immersive product experiences',
+    description: 'Dynamic admin dashboard for managing products, orders, and analytics — built with Next.js and Firebase for real-time control.',
     image: '/project/ecommercedashboard.png',
     github: 'https://github.com/SyedWasifAli1/ecommercedashboard',
     video: 'https://bazaristan-dashboard-4t47.vercel.app/',
   },
-
-
 ];
+
 
 export default function Projects() {
   return (

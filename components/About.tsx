@@ -29,40 +29,60 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <section
-      className="relative py-24 px-6 bg-gradient-to-b from-white to-gray-100 text-center overflow-hidden"
       id="about"
+      className="relative py-28 px-6 bg-gradient-to-b from-white via-gray-50 to-gray-100 text-center overflow-hidden"
     >
-      {/* 🔮 Subtle 3D Pastel Blobs for Background */}
-      <div className="absolute -top-32 -left-20 w-96 h-96 bg-cyan-200 opacity-30 rounded-full blur-3xl animate-pulse-slow z-0" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-300 opacity-25 rounded-full blur-3xl animate-pulse z-0" />
-      <div className="absolute top-1/2 left-1/4 w-72 h-72 bg-pink-200 opacity-20 rounded-full blur-2xl animate-spin-slow z-0" />
+      {/* 🌈 Floating Gradient Blobs */}
+      <div className="absolute -top-40 -left-32 w-[30rem] h-[30rem] bg-cyan-300 opacity-25 rounded-full blur-3xl animate-pulse-slow z-0" />
+      <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-purple-400 opacity-25 rounded-full blur-3xl animate-float z-0" />
+      <div className="absolute top-1/3 right-1/4 w-[22rem] h-[22rem] bg-pink-300 opacity-20 rounded-full blur-2xl animate-spin-slow z-0" />
 
-      {/* ✨ Section Heading with Gradient Text */}
+      {/* ✨ Title with Neon Glow */}
       <motion.h2
-        className="text-4xl md:text-5xl font-extrabold mb-10 z-10 relative bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.7 }}
+        className="relative text-5xl md:text-6xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 drop-shadow-[0_0_25px_rgba(168,85,247,0.4)]"
       >
         About Me
       </motion.h2>
 
-      {/* 🧊 Glassmorphism Card with Hover Effect */}
+      {/* 🧊 Glass Card with Glow & Floating Animation */}
       <motion.div
-        className="relative z-10 max-w-3xl mx-auto bg-white/20 backdrop-blur-xl border border-white/30 rounded-2xl shadow-2xl px-8 py-12 text-gray-800 transform transition-all duration-500 hover:scale-105 hover:shadow-3xl"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, scale: 0.9, y: 30 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.7, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="relative max-w-3xl mx-auto bg-white/20 backdrop-blur-2xl border border-white/30 rounded-3xl shadow-[0_8px_50px_rgba(0,0,0,0.1)] px-10 py-14 text-gray-800 transform transition-all duration-700 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] hover:scale-[1.04] hover:border-purple-300/40"
       >
-        <p className="text-lg md:text-xl leading-relaxed">
-          I&apos;m a full stack developer specializing in Flutter, Next.js, MERN/MEAN, Firebase, and Python AI. I build modern, scalable web & mobile applications that are visually appealing, responsive, and client-ready. My goal is to craft digital experiences that captivate users and elevate business growth.
-        </p>
+    <motion.p
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.9, delay: 0.3 }}
+  className="text-lg md:text-xl leading-relaxed font-medium text-gray-700"
+>
+  I’m a passionate{" "}
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold">
+    Full Stack Developer & AI Agent Developer
+  </span>{" "}
+  specializing in{" "}
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-500 font-semibold">
+    Next.js, MERN/MEAN, Firebase, OpenAI SDK, Python, and n8n
+  </span>
+  . I love crafting fast, scalable, and visually stunning digital experiences
+  that connect users and help businesses grow with confidence.
+</motion.p>
+
+
+        {/* 💫 Subtle Glow Line */}
+        <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3/4 h-[2px] bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 blur-sm rounded-full opacity-60" />
       </motion.div>
     </section>
   );
 }
+
 
 
 // 'use client';
